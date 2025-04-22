@@ -41,3 +41,36 @@ const CONFIG = {
   },
   // ... other settings
 };
+See example-config.js for all available options.
+
+## Usage
+The system works automatically with these behaviors:
+
+## New Carts Sheet:
+
+Data is automatically copied to "Current" sheet
+
+Source rows are cleared after copying
+
+## Current/Completed Sheets:
+
+Cart numbers are auto-capitalized
+
+Dates are formatted consistently
+
+Duplicates are highlighted
+
+## Task Movement:
+
+Rows with checked "Completed" column move to Completed Tab
+
+Unchecked rows in Completed Tab move back to Current
+
+## Troubleshooting
+Problem: Script isn't triggering
+
+Solution: Ensure the onEdit trigger is installed
+
+Problem: Dates not formatting correctly
+
+Solution: Check the dateFormat in config.js
